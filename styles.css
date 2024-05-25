@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #39FF14;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.feature {
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
